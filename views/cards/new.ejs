@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <form id='new-card-form' action="/cards" method="POST">
+        <label>Legislator:</label>
+        <select name="legislator">
+           <option value="leg1">LEG 1</option>
+           <option value="leg2">LEG 2</option>
+        </select>
+        <label>Include:</label>
+        <label>Personal Financial Summary</label>
+        <input type="checkbox" name="memPFDprofile">
+        <label>Top Ten Industry Contributions</label>
+        <input type="checkbox" name="candIndustry">
+        <label>Vote History</label>
+        <input type="checkbox" name="getvotes">
+        <input type="submit" value="Add to Board">
+    </form>
+  </body>
+</html>

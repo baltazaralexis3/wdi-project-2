@@ -1,7 +1,12 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-var cardSchema = new mongoose.Schema ({
-    text: String
+var cardSchema = new Schema({
+    legislator: String,
+    bio: {},
+    finSumm: {},
+    topTenInd: {},
+    votes: []
 }, {
     timestamps: true
 })

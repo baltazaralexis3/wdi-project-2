@@ -6,5 +6,5 @@ module.exports = {
 };
 
 function getMembers(req, res) {
-
+    console.log()
 }
